@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+
+namespace Prog1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int data_at, data_nasc, idade;
+
+            Console.WriteLine(" qual a data atual");
+            data_at = int.Parse(Console.ReadLine());
+            Console.WriteLine(" qual data de nascimento");
+            data_nasc = int.Parse(Console.ReadLine());
+
+            idade = data_at - data_nasc;
+
+            Console.WriteLine("sua idade e " + idade + " anos");
+            Console.ReadKey();
+        }
+    }
+}
